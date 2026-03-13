@@ -222,7 +222,7 @@
     transition: all 0.25s ease;
   }
   .card:hover { transform: translateY(-4px); border-color: rgba(255,61,61,0.4); }
-  .card-icon { font-size: 28px; margin-bottom: 20px; color: #FF3D3D; }
+  .card-icon { width: 40px; height: 40px; margin-bottom: 20px; color: #FF3D3D; }
   .card h3 { font-size: 28px; margin-bottom: 12px; letter-spacing: 0.5px; }
   .card p { font-family: 'Outfit', sans-serif; color: rgba(255,255,255,0.5); font-size: 15px; line-height: 1.7; font-weight: 300; }
 
@@ -331,8 +331,11 @@
     #rev-track .card > div:nth-child(1) > div:first-child {
       width: 56px !important;
       height: 56px !important;
+      min-width: 56px !important;
+      min-height: 56px !important;
       font-size: 22px !important;
       margin: 0 !important;
+      flex-shrink: 0 !important;
     }
     #rev-track .card > div:nth-child(2) { display: none !important; }
     #rev-track .card > div:nth-child(3) p {
@@ -420,7 +423,7 @@
       <div class="stat-label">Devs focados no seu negócio</div>
     </div>
     <div class="stat">
-      <div class="stat-num">∞</div>
+      <div class="stat-num" style="font-size:42px;">SEM LIMITES</div>
       <div class="stat-label">Possibilidades criativas</div>
     </div>
   </div>
@@ -434,22 +437,22 @@
   </div>
   <div class="cards-grid">
     <div class="card">
-      <div class="card-icon">◈</div>
+      <div class="card-icon"><svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="8" width="32" height="22" rx="3" stroke="#FF3D3D" stroke-width="2"/><path d="M14 34h12M20 30v4" stroke="#FF3D3D" stroke-width="2" stroke-linecap="round"/></svg></div>
       <h3>SITES INSTITUCIONAIS</h3>
       <p>Presença digital profissional que transmite credibilidade para o seu negócio.</p>
     </div>
     <div class="card">
-      <div class="card-icon">◉</div>
+      <div class="card-icon"><svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 8h28l-3 14H9L6 8z" stroke="#FF3D3D" stroke-width="2" stroke-linejoin="round"/><circle cx="14" cy="34" r="2" stroke="#FF3D3D" stroke-width="2"/><circle cx="26" cy="34" r="2" stroke="#FF3D3D" stroke-width="2"/><path d="M9 22h22" stroke="#FF3D3D" stroke-width="2" stroke-linecap="round"/></svg></div>
       <h3>LOJAS VIRTUAIS</h3>
       <p>E-commerce completo, do design ao checkout — pronto para vender.</p>
     </div>
     <div class="card">
-      <div class="card-icon">◎</div>
+      <div class="card-icon"><svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 32L20 8l12 24H8z" stroke="#FF3D3D" stroke-width="2" stroke-linejoin="round"/><path d="M14 24h12" stroke="#FF3D3D" stroke-width="2" stroke-linecap="round"/></svg></div>
       <h3>LANDING PAGES</h3>
       <p>Páginas de alta conversão para campanhas, lançamentos e captação de leads.</p>
     </div>
     <div class="card">
-      <div class="card-icon">◐</div>
+      <div class="card-icon"><svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="10" width="28" height="22" rx="3" stroke="#FF3D3D" stroke-width="2"/><path d="M6 16h28" stroke="#FF3D3D" stroke-width="2"/><circle cx="11" cy="13" r="1.5" fill="#FF3D3D"/><circle cx="16" cy="13" r="1.5" fill="#FF3D3D"/><path d="M13 24h14M13 28h8" stroke="#FF3D3D" stroke-width="2" stroke-linecap="round"/></svg></div>
       <h3>PORTFÓLIOS</h3>
       <p>Vitrines digitais para criativos, freelancers e profissionais.</p>
     </div>
@@ -639,7 +642,7 @@
         <div style="min-width:100%;padding:2px;">
           <div class="card" style="display:flex;gap:48px;padding:48px;align-items:center;border-color:rgba(255,255,255,0.08);">
             <div style="flex-shrink:0;text-align:center;">
-              <div style="width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,#FF3D3D,#ff8c69);display:flex;align-items:center;justify-content:center;font-size:32px;font-family:'Bebas Neue',sans-serif;margin:0 auto 12px;">M</div>
+              <div style="width:80px;height:80px;min-width:80px;min-height:80px;border-radius:50%;background:linear-gradient(135deg,#FF3D3D,#ff8c69);display:flex;align-items:center;justify-content:center;font-size:32px;font-family:'Bebas Neue',sans-serif;flex-shrink:0;margin:0 auto 12px;">M</div>
               <div style="font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:1px;white-space:nowrap;">MARCOS OLIVEIRA</div>
               <div style="font-family:'Outfit',sans-serif;font-size:12px;color:rgba(255,255,255,0.35);margin-top:4px;">Dono — Bella Napoli</div>
               <div style="color:#FF3D3D;font-size:16px;letter-spacing:3px;margin-top:10px;">★★★★★</div>
@@ -656,7 +659,7 @@
         <div style="min-width:100%;padding:2px;">
           <div class="card" style="display:flex;gap:48px;padding:48px;align-items:center;border-color:rgba(255,61,61,0.25);background:rgba(255,61,61,0.03);">
             <div style="flex-shrink:0;text-align:center;">
-              <div style="width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,#3d6fff,#69a8ff);display:flex;align-items:center;justify-content:center;font-size:32px;font-family:'Bebas Neue',sans-serif;margin:0 auto 12px;">A</div>
+              <div style="width:80px;height:80px;min-width:80px;min-height:80px;border-radius:50%;background:linear-gradient(135deg,#3d6fff,#69a8ff);display:flex;align-items:center;justify-content:center;font-size:32px;font-family:'Bebas Neue',sans-serif;flex-shrink:0;margin:0 auto 12px;">A</div>
               <div style="font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:1px;white-space:nowrap;">ANA CAROLINA SOUZA</div>
               <div style="font-family:'Outfit',sans-serif;font-size:12px;color:rgba(255,255,255,0.35);margin-top:4px;">Fundadora — Velvet Store</div>
               <div style="color:#FF3D3D;font-size:16px;letter-spacing:3px;margin-top:10px;">★★★★★</div>
@@ -673,7 +676,7 @@
         <div style="min-width:100%;padding:2px;">
           <div class="card" style="display:flex;gap:48px;padding:48px;align-items:center;border-color:rgba(255,255,255,0.08);">
             <div style="flex-shrink:0;text-align:center;">
-              <div style="width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,#3dff8c,#69ffc8);display:flex;align-items:center;justify-content:center;font-size:32px;font-family:'Bebas Neue',sans-serif;margin:0 auto 12px;">R</div>
+              <div style="width:80px;height:80px;min-width:80px;min-height:80px;border-radius:50%;background:linear-gradient(135deg,#3dff8c,#69ffc8);display:flex;align-items:center;justify-content:center;font-size:32px;font-family:'Bebas Neue',sans-serif;flex-shrink:0;margin:0 auto 12px;">R</div>
               <div style="font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:1px;white-space:nowrap;">RODRIGO FERREIRA</div>
               <div style="font-family:'Outfit',sans-serif;font-size:12px;color:rgba(255,255,255,0.35);margin-top:4px;">Diretor — Iron Fit</div>
               <div style="color:#FF3D3D;font-size:16px;letter-spacing:3px;margin-top:10px;">★★★★★</div>
